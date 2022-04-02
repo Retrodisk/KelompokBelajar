@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_satu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 1" />
+
+    <Button
+        android:id="@+id/btn_dua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/btn_satu"
+        android:text="Button 2" />
+
+    <Button
+        android:id="@+id/btn_tiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_dua"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/btn_satu"
+        android:text="Button 3" />
+
+    <Button
+        android:id="@+id/btn_empat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Button 4" />
+
+    <Button
+        android:id="@+id/btn_lima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Button 5" />
+
+    <Button
+        android:id="@+id/Btn_enam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Button 6" />
+
+    <Button
+        android:id="@+id/Btn_tujuh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/btn_empat"
+        android:text="Button 7" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/btn_empat"
+        android:src="@drawable/logo_himti"/>
+
+    <LinearLayout
+        android:layout_below="@+id/btn_empat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+    <!-- realtive layout -->
+    <!-- jika belum diatur posisi nya dia akan menumpuk -->
+    <!-- urutan codeing menentukan posisis, jika paling atas akan paling belakang dan jika paling bawah akan paling atas -->
+    <!-- butuh id untuk memposisiskan widget/view -->
+    <!-- identitas lebih baik menggunakan huruf -->
+    <!-- reformat code untuk merapihkan code -->

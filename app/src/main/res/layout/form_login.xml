@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_satu"
+        android:layout_width="140dp"
+        android:layout_height="110dp"
+        android:layout_above="@+id/txt_satu"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_himti" />
+
+    <TextView
+        android:id="@+id/txt_satu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/widget_satu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:text="HIMTI SUPER APPS"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_dua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/widget_satu"
+        android:layout_alignEnd="@+id/widget_satu"
+        android:text="Lupa Password ?"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_tiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_empat"
+        android:layout_centerHorizontal="true"
+        android:text="Divisi Penelitian dan Pengembangan"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_empat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="HIMTI 2022"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/showPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/showpass"
+        android:layout_below="@+id/txt_satu"
+        android:layout_marginTop="63dp"
+        android:visibility="visible"
+        android:layout_alignEnd="@+id/widget_satu"/>
+
+
+    <ImageView
+        android:id="@+id/hidePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/showpass"
+        android:layout_below="@+id/txt_satu"
+        android:layout_marginTop="63dp"
+        android:visibility="gone"
+        android:layout_alignEnd="@+id/widget_satu"/>
+
+    <LinearLayout
+        android:id="@+id/widget_satu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="70dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:hint="NIM"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#e66905"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e66905"
+            android:text="Register" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
